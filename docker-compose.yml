@@ -1,0 +1,13 @@
+version: '3.5'
+services:
+  backend:
+    build:
+      context: .
+      target: dev
+    volumes:
+      - ./:/app
+    image: sample:latest-dev
+    ports:
+      - 1323:1323
+
+ 
